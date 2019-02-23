@@ -61,11 +61,11 @@ class Count extends React.Component {
   render() {
     return (
       <Wrapper>
-      <Title>The counter is currently {this.state.count}</Title>
-      <BlackButton onClick={() => this.decrement(1)}>
+      <Title data-test="counter-display">The counter is currently {this.state.count}</Title>
+      <BlackButton data-test="dec-button" onClick={() => this.decrement(1)}>
         -
       </BlackButton>
-      <RedButton onClick={() => this.increment(1)}>
+      <RedButton data-test="inc-button" onClick={() => this.increment(1)}>
         +
       </RedButton>
       </Wrapper>
